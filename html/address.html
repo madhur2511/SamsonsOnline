@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Postal Address Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/bootstrap/bootstrap-combined.min.css" rel="stylesheet">
+    <style type="text/css">
+        div.container
+        {
+            color:red;
+            font-weight: bold; 
+            background-color: black;  
+            text-align: center;
+        }
+        p.help-block
+        {
+            color:red;
+            font-weight: bold; 
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		 <form class="form-horizontal">
+            <fieldset>
+                <!-- Address form -->
+                <h2>Address</h2>         
+                <!-- full-name input-->
+                <div class="control-group">
+                    <label class="control-label">Full Name</label>
+                    <div class="controls">
+                        <input id="full-name" name="full-name" type="text" placeholder="full name"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- parent-name input-->
+                <div class="control-group">
+                    <label class="control-label">Parent Name</label>
+                    <div class="controls">
+                        <input id="parent-name" name="parent-name" type="text" placeholder="parent name"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- address-line1 input-->
+                <div class="control-group">
+                    <label class="control-label">Address Line 1</label>
+                    <div class="controls">
+                        <input id="address-line1" name="address-line1" type="text" placeholder="address line 1"
+                        class="input-xlarge">
+                        <p class="help-block">Street address, P.O. box, company name, c/o</p>
+                    </div>
+                </div>
+                <!-- address-line2 input-->
+                <div class="control-group">
+                    <label class="control-label">Address Line 2</label>
+                    <div class="controls">
+                        <input id="address-line2" name="address-line2" type="text" placeholder="address line 2"
+                        class="input-xlarge">
+                        <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+                    </div>
+                </div>
+                <!-- city input-->
+                <div class="control-group">
+                    <label class="control-label">City</label>
+                    <div class="controls">
+                        <input id="city" name="city" type="text" placeholder="city"
+                        class="input-xlarge">
+                        <p class="help-block">Enter an indian city</p>
+                    </div>
+                </div>
+                <!-- pincode input-->
+                <div class="control-group">
+                    <label class="control-label">Pincode</label>
+                    <div class="controls">
+                        <input id="pincode" name="pincode" type="text" placeholder="pincode"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- city input-->
+                <div class="control-group">
+                    <label class="control-label">Class</label>
+                    <div class="controls">
+                        <input id="class" name="class" type="text" placeholder="class"
+                        class="input-xlarge">
+                        <p class="help-block">1st to 12th, Nursery : 13, LKG : 14, UKG : 15</p>
+                    </div>
+                </div>
+                
+                <!-- school select -->
+                <div class="control-group">
+                    <label class="control-label">School</label>
+                    <div class="controls">
+                        <select id="school" name="school" class="input-xlarge">
+                            <option value="" selected="selected">(please select a school)</option>
+                            <option value="1">AIRFORCE PUBLIC SCHOOL</option>
+                            <option value="2">AMRITA SPECIAL SCHOOL</option>
+                            <option value="3">ARCHIES SCHOOL</option>
+                            <option value="4">ARMY PUBLIC SCHOOL</option>
+                            <option value="5">B.N.S.D INTER COLLEGE</option>
+                            <option value="6">BAL BHAWAN SCHOOL</option>
+                            <option value="7">BENHUR PUBLIC SCHOOL</option>
+                            <option value="8">BILLA BONG INTERNATIONAL HIGH SCHOOL</option>
+                            <option value="9">BISHOP WESTCOTT SCHOOL</option>
+                            <option value="10">CAMBRIDGE HIGH SCHOOL</option>
+                            <option value="11">CHILD CARE SCHOOL</option>
+                            <option value="12">CHIRST CHARCH INTER COLLAGE</option>
+                            <option value="13">DELHI PUBLIC SCHOOL</option>
+                            <option value="14">DR VIRENDRA SWAROOP EDUCATION CENTER</option>
+                            <option value="15">DR VIRENDRA SWAROOP GIRLS HIGH SCHOOL</option>
+                            <option value="16">DR VIRENDRA SWAROOP MEMORIAL SCHOOL CIVIL LINES</option>
+                            <option value="17">DR VIRENDRA SWAROOP PUBLIC SCHOOL CANTT</option>
+                            <option value="18">DR VIRENDRA SWAROOP SR. SEC. SCHOOL</option>
+                            <option value="19">ESSEL KIDS SCHOOL</option>
+                            <option value="20">FATIMA CONVENT SCHOOL</option>
+                            <option value="21">FLORETS INTERNATIONAL </option>
+                            <option value="22">GANGES WORLD SCHOOL</option>
+                            <option value="23">GAURAV MEMORIAL PUBLIC SCHOOL</option>
+                            <option value="24">GREEN WOOD PUBLIC SCHOOL</option>
+                            <option value="25">GURU HAR RAI ACADEMY</option>
+                            <option value="26">GURU HAR RAI STARS</option>
+                            <option value="27">GURU NANAK MODEL SCHOOL</option>
+                            <option value="28">GURUKUL STEPS</option>
+                            <option value="29">HALIM MUSLIM INTER COLLEGE</option>
+                            <option value="30">HALIM PRIMARY SCHOOL</option>
+                            <option value="31">HAPPY FACES</option>
+                            <option value="32">HAPPY KINDERGARTEN</option>
+                            <option value="33">HARE RAMA HARE KRISHNA SCHOOL</option>
+                            <option value="34">HUDDARD HIGH SCHOOL</option>
+                            <option value="35">HUDSON MEMORIAL SCHOOL</option>
+                            <option value="36">INTERNATIONAL CENTRE SCHOOL</option>
+                            <option value="37">ISLAMIA PUBLIC SCHOOL</option>
+                            <option value="38">JACK & JILL NURSERY</option>
+                            <option value="39">JAIN INTERNATIONAL SCHOOL</option>
+                            <option value="40">JAIN TODDLERS</option>
+                            <option value="41">JAWAHAR PUBLIC SCHOOL</option>
+                            <option value="42">JESUS PANNAH SCHOOL</option>
+                            <option value="43">JUGAL DEVI SARASWATI INTER COLLEGE</option>
+                            <option value="44">K R EDUCATION CENTRE</option>
+                            <option value="45">K.K. PUBLIC SCHOOL</option>
+                            <option value="46">KAILASH NATH INTER COLLEGE</option>
+                            <option value="47">KANGAROO KIDS NURSERY</option>
+                            <option value="48">KATYAN PUBLIC SCHOOL</option>
+                            <option value="49">KENDRIYA VIDHYALAYA</option>
+                            <option value="50">KIDZEE SCHOOL</option>
+                            <option value="51">LAUGHING BUDHA SCHOOL</option>
+                            <option value="52">LITTLE FOLKS SCHOOL</option>
+                            <option value="53">M.A.SOLANKI SCHOOL</option>
+                            <option value="54">MAHARANA PRATAP EDUCATION CENTER</option>
+                            <option value="55">MARIYAM PUBLIC SCHOOL</option>
+                            <option value="56">MENTORA PUBLIC SCHOOL</option>
+                            <option value="57">MERCY MEMORIAL SCHOOL</option>
+                            <option value="58">METHODIST HIGH SCHOOL</option>
+                            <option value="59">MODEL SCHOOL FOR INFANTS</option>
+                            <option value="60">MOTHER TERESSA INTER SCHOOL</option>
+                            <option value="61">MOTI LAL KEDIA SCHOOL</option>
+                            <option value="62">N L K SCHOOL</option>
+                            <option value="63">NAVYUG SCHOOL</option>
+                            <option value="64">NEW VISION PUBLIC SCHOOL</option>
+                            <option value="65">OJHA INTERNATIONAL PUBLIC SCHOOL</option>
+                            <option value="66">ONKAR NATH DHAWAN SCHOOL</option>
+                            <option value="67">OXFORD MODEL SCHOOL</option>
+                            <option value="68">POORAN CHAND VIDHYA NIKETAN</option>
+                            <option value="69">PRAYAG PUBLIC SCHOOL</option>
+                            <option value="70">PT D P MISRA MEMORIAL SCHOOL</option>
+                            <option value="71">PT DEEN DAYAL UPADHAYAY SCHOOL</option>
+                            <option value="72">PT. LAXMI NARAIN GAUR PUBLIC SCHOOL</option>
+                            <option value="73">PT. POORAN CHANDRA SARASWATI VIDHYA NIKETAN</option>
+                            <option value="74">R K ACADEMY</option>
+                            <option value="75">R.K. PUBLIC SCHOOL</option>
+                            <option value="76">SANATAN DHARM EDUCATION CENTRE</option>
+                            <option value="77">SEEDLING ACADEMY</option>
+                            <option value="78">SETH ANAND RAM JAIPURIA SCHOOL</option>
+                            <option value="79">SHAHEED CHANDRA SHEKHAR AZAD INTER COLLEGE</option>
+                            <option value="80">SHAKUNTALA DEVI AGARWAL MEMORIAL SCHOOL BITHOOR</option>
+                            <option value="81">SHAKUNTALA DEVI AGARWAL MEMORIAL SCHOOL PANKI</option>
+                            <option value="82">SHEILING HOUSE SCHOOL</option>
+                            <option value="83">SIR PADAMPAT SINGHANIA EDUCATION CENTER (JK SCHOOL)</option>
+                            <option value="84">SIR SYED PUBLIC SCHOOL</option>
+                            <option value="85">SONEY LAL PATEL M. SCHOOL</option>
+                            <option value="86">SPRING DALES SCHOOL</option>
+                            <option value="87">SRI RAM PUBLIC SCHOOL</option>
+                            <option value="88">ST ALOYSIUS SCHOOL</option>
+                            <option value="89">ST JOHNS SCHOOL</option>
+                            <option value="90">ST JOSEPH CONVENT</option>
+                            <option value="91">ST MARRY'S CONVENT</option>
+                            <option value="92">ST. MEERA SCHOOL</option>
+                            <option value="93">ST. THOMAS SCHOOL</option>
+                            <option value="94">ST.MARYS ORTHODOX SCHOOL</option>
+                            <option value="95">ST.PAUL SCHOOL</option>
+                            <option value="96">STEPPING STONES SCHOOL</option>
+                            <option value="97">SUN BEAMS SCHOOL</option>
+                            <option value="98">SUPER INTERNATIONAL SCHOOL</option>
+                            <option value="99">SWARAJ INIAD PUBLIC SCHOOL</option>
+                            <option value="100">TENDERFOOT PUBLIC SCHOOL</option>
+                            <option value="101">TINY TOTS NURSERY</option>
+                            <option value="102">U.P. KIRANA SCHOOL</option>
+                            <option value="103">UNITED PUBLIC SCHOOL</option>
+                            <option value="104">WENDY SCHOOL</option>
+                            <option value="105">WONDER PLAY SCHOOL</option>
+                            <option value="106">WOOD BINE GARDENIA SCHOOL</option>
+                            <option value="107">YOUHE PUBLIC SCHOOL</option>
+                            <option value="108">ZEENAT INTERNATIONAL SCHOOL</option>
+                        </select>
+                    </div>
+                </div> 
+                <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="submit"></label>
+                    <div class="controls">
+                    <button id="submitval" name="submitval" class="btn btn-success" onclick="complete()">Complete Profile</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+	</div>
+</div>
+<!--<script src="http://code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"></script>-->
+<script src="../assets/js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/custom/address.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Samsons Online
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="container">
+			<hr class="prettyline">
+			<br>
+			<center>
+				<h1><b>WELCOME</b></h1>
+				<h2>
+					to<br/><br/>
+					The Samsons Online Store <br/> <small> At your service since 1948 </small> </h2>
+				<br/>
+				
+				<button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In / Register</button>
+			</center><br>
+			<hr class="prettyline">
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<br>
+					<div class="bs-example bs-example-tabs">
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active">
+								<a href="#signin" data-toggle="tab">Sign In</a>
+							</li>
+							<li class="">
+								<a href="#signup" data-toggle="tab">Register</a>
+							</li>
+							<li class="">
+								<a href="#why" data-toggle="tab">Why?</a>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<div id="myTabContent" class="tab-content"><!-- why credentials -->
+							<div class="tab-pane fade in" id="why">
+								<p>
+									We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone
+								</p><br>
+								Please contact <a mailto:href="madhur2511@gmail.com"></a>madhur2511@gmail.com for any other inquiries.
+							</div><!-- enter sign in credentials -->
+							<div class="tab-pane fade active in" id="signin">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Sign In Form -->
+										<!-- Phone number input-->
+										<div class="control-group">
+											<label class="control-label" for="user">Mobile No:</label>
+											<div class="controls">
+												<input required="" id="user" name="user" type="numbers" placeholder="9886408227" class="input-medium" required="">
+											</div>
+										</div><!-- Password input-->
+										<div class="control-group">
+											<label class="control-label" for="passwordinput">Password:</label>
+											<div class="controls">
+												<input required="" id="passwordinput" name="passwordinput" type="password" placeholder="********" class="input-medium">
+											</div>
+										</div><!-- Multiple Checkboxes (inline) -->
+										<div class="control-group">
+											<div class="controls">
+												<label class="checkbox inline" for="rememberme-0"><input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me"> Remember me</label>
+											</div>
+										</div><!-- Button -->
+										<div class="control-group">
+											<div class="controls">
+												<button id="signin" name="signin" class="btn btn-success" onclick="login()">Sign In</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div><!-- enter sign up credentials -->
+							<div class="tab-pane fade" id="signup">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Sign Up Form -->
+										<!-- Text input-->
+										<div class="control-group">
+											<label class="control-label" for="userid">Mobile Number:</label>
+											<div class="controls">
+												<input id="userid" name="userid" type="number" placeholder="9886408227" class="input-large" required="">
+											</div>
+										</div><!-- Text input-->
+										<div class="control-group">
+											<label class="control-label" for="setpassword">Set Password:</label>
+											<div class="controls">
+												<input id="setpassword" name="setpassword" type="password" placeholder="********" class="input-large" required=""> <em> s>6 characters</em>
+											</div>
+										</div><!-- Multiple Radios (inline) -->
+										<br>
+										<div class="control-group">
+											<label class="control-label" for="humancheck">Humanity Check:</label>
+											<div id="humanitycheck" class="controls">
+												<label class="radio inline" for="humancheck-0"><input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label> <label class="radio inline" for="humancheck-1"><input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+											</div>
+										</div><!-- Button -->
+										<div class="control-group">
+											<div class="controls">
+												<button id="confirmsignup" name="confirmsignup" class="btn btn-success" onclick="signup()">Sign Up</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<center>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/lib/jquery/jquery.min.js" type="text/javascript"></script>
+		<script src="./assets/js/lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+		<script src="./assets/js/custom/login_signup.js" type="text/javascript"></script>
+	</body>
+</html>

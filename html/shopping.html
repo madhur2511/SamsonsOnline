@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Samsons Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <styles src = "../assets/css/custom/shopping.css"  type="text/css" ></style>
+    <script src="../assets/js/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/js/lib/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-20">
+            <div class="panel with-nav-tabs panel-danger">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1value" data-toggle="tab">SHOP VIA SCHOOL</a></li>
+                            <li><a href="#tab2value" data-toggle="tab">SHOP VIA STUDENT</a></li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1value"> SCHOOL
+                            <div class="container">
+                <div class="col-sm-2">
+                <nav class="nav-sidebar">
+                    <ul class="nav tabs">
+                      <li class="active"><a href="#tab1" data-toggle="tab">SCHOOL NAME</a></li>
+                      <li class=""><a href="#tab2" data-toggle="tab">GENDER</a></li>
+                      <li class=""><a href="#tab3" data-toggle="tab">SIZE</a></li>     
+                      <li class=""><a href="#tab4" data-toggle="tab">UNIFORMS</a></li>   
+                      <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-modal-sm" onclick="addtoschoolcart()">ADD TO CART</button></li>                  
+                    </ul>
+                </nav>
+                    
+            </div>
+            <!-- tab content -->
+            <div class="tab-content">
+            <div class="tab-pane active text-style" id="tab1">
+                   <div class="controls">
+                        <select id="school" name="school" class="input-xlarge">
+                            <option value="" selected="selected">(please select a school)</option>
+                            <option value="1">AIRFORCE PUBLIC SCHOOL</option>
+                            <option value="2">AMRITA SPECIAL SCHOOL</option>
+                            <option value="3">ARCHIES SCHOOL</option>
+                            <option value="4">ARMY PUBLIC SCHOOL</option>
+                            <option value="5">B.N.S.D INTER COLLEGE</option>
+                            <option value="6">BAL BHAWAN SCHOOL</option>
+                            <option value="7">BENHUR PUBLIC SCHOOL</option>
+                            <option value="8">BILLA BONG INTERNATIONAL HIGH SCHOOL</option>
+                            <option value="9">BISHOP WESTCOTT SCHOOL</option>
+                            <option value="10">CAMBRIDGE HIGH SCHOOL</option>
+                            <option value="11">CHILD CARE SCHOOL</option>
+                            <option value="12">CHIRST CHARCH INTER COLLAGE</option>
+                            <option value="13">DELHI PUBLIC SCHOOL</option>
+                            <option value="14">DR VIRENDRA SWAROOP EDUCATION CENTER</option>
+                            <option value="15">DR VIRENDRA SWAROOP GIRLS HIGH SCHOOL</option>
+                            <option value="16">DR VIRENDRA SWAROOP MEMORIAL SCHOOL CIVIL LINES</option>
+                            <option value="17">DR VIRENDRA SWAROOP PUBLIC SCHOOL CANTT</option>
+                            <option value="18">DR VIRENDRA SWAROOP SR. SEC. SCHOOL</option>
+                            <option value="19">ESSEL KIDS SCHOOL</option>
+                            <option value="20">FATIMA CONVENT SCHOOL</option>
+                            <option value="21">FLORETS INTERNATIONAL </option>
+                            <option value="22">GANGES WORLD SCHOOL</option>
+                            <option value="23">GAURAV MEMORIAL PUBLIC SCHOOL</option>
+                            <option value="24">GREEN WOOD PUBLIC SCHOOL</option>
+                            <option value="25">GURU HAR RAI ACADEMY</option>
+                            <option value="26">GURU HAR RAI STARS</option>
+                            <option value="27">GURU NANAK MODEL SCHOOL</option>
+                            <option value="28">GURUKUL STEPS</option>
+                            <option value="29">HALIM MUSLIM INTER COLLEGE</option>
+                            <option value="30">HALIM PRIMARY SCHOOL</option>
+                            <option value="31">HAPPY FACES</option>
+                            <option value="32">HAPPY KINDERGARTEN</option>
+                            <option value="33">HARE RAMA HARE KRISHNA SCHOOL</option>
+                            <option value="34">HUDDARD HIGH SCHOOL</option>
+                            <option value="35">HUDSON MEMORIAL SCHOOL</option>
+                            <option value="36">INTERNATIONAL CENTRE SCHOOL</option>
+                            <option value="37">ISLAMIA PUBLIC SCHOOL</option>
+                            <option value="38">JACK & JILL NURSERY</option>
+                            <option value="39">JAIN INTERNATIONAL SCHOOL</option>
+                            <option value="40">JAIN TODDLERS</option>
+                            <option value="41">JAWAHAR PUBLIC SCHOOL</option>
+                            <option value="42">JESUS PANNAH SCHOOL</option>
+                            <option value="43">JUGAL DEVI SARASWATI INTER COLLEGE</option>
+                            <option value="44">K R EDUCATION CENTRE</option>
+                            <option value="45">K.K. PUBLIC SCHOOL</option>
+                            <option value="46">KAILASH NATH INTER COLLEGE</option>
+                            <option value="47">KANGAROO KIDS NURSERY</option>
+                            <option value="48">KATYAN PUBLIC SCHOOL</option>
+                            <option value="49">KENDRIYA VIDHYALAYA</option>
+                            <option value="50">KIDZEE SCHOOL</option>
+                            <option value="51">LAUGHING BUDHA SCHOOL</option>
+                            <option value="52">LITTLE FOLKS SCHOOL</option>
+                            <option value="53">M.A.SOLANKI SCHOOL</option>
+                            <option value="54">MAHARANA PRATAP EDUCATION CENTER</option>
+                            <option value="55">MARIYAM PUBLIC SCHOOL</option>
+                            <option value="56">MENTORA PUBLIC SCHOOL</option>
+                            <option value="57">MERCY MEMORIAL SCHOOL</option>
+                            <option value="58">METHODIST HIGH SCHOOL</option>
+                            <option value="59">MODEL SCHOOL FOR INFANTS</option>
+                            <option value="60">MOTHER TERESSA INTER SCHOOL</option>
+                            <option value="61">MOTI LAL KEDIA SCHOOL</option>
+                            <option value="62">N L K SCHOOL</option>
+                            <option value="63">NAVYUG SCHOOL</option>
+                            <option value="64">NEW VISION PUBLIC SCHOOL</option>
+                            <option value="65">OJHA INTERNATIONAL PUBLIC SCHOOL</option>
+                            <option value="66">ONKAR NATH DHAWAN SCHOOL</option>
+                            <option value="67">OXFORD MODEL SCHOOL</option>
+                            <option value="68">POORAN CHAND VIDHYA NIKETAN</option>
+                            <option value="69">PRAYAG PUBLIC SCHOOL</option>
+                            <option value="70">PT D P MISRA MEMORIAL SCHOOL</option>
+                            <option value="71">PT DEEN DAYAL UPADHAYAY SCHOOL</option>
+                            <option value="72">PT. LAXMI NARAIN GAUR PUBLIC SCHOOL</option>
+                            <option value="73">PT. POORAN CHANDRA SARASWATI VIDHYA NIKETAN</option>
+                            <option value="74">R K ACADEMY</option>
+                            <option value="75">R.K. PUBLIC SCHOOL</option>
+                            <option value="76">SANATAN DHARM EDUCATION CENTRE</option>
+                            <option value="77">SEEDLING ACADEMY</option>
+                            <option value="78">SETH ANAND RAM JAIPURIA SCHOOL</option>
+                            <option value="79">SHAHEED CHANDRA SHEKHAR AZAD INTER COLLEGE</option>
+                            <option value="80">SHAKUNTALA DEVI AGARWAL MEMORIAL SCHOOL BITHOOR</option>
+                            <option value="81">SHAKUNTALA DEVI AGARWAL MEMORIAL SCHOOL PANKI</option>
+                            <option value="82">SHEILING HOUSE SCHOOL</option>
+                            <option value="83">SIR PADAMPAT SINGHANIA EDUCATION CENTER (JK SCHOOL)</option>
+                            <option value="84">SIR SYED PUBLIC SCHOOL</option>
+                            <option value="85">SONEY LAL PATEL M. SCHOOL</option>
+                            <option value="86">SPRING DALES SCHOOL</option>
+                            <option value="87">SRI RAM PUBLIC SCHOOL</option>
+                            <option value="88">ST ALOYSIUS SCHOOL</option>
+                            <option value="89">ST JOHNS SCHOOL</option>
+                            <option value="90">ST JOSEPH CONVENT</option>
+                            <option value="91">ST MARRY'S CONVENT</option>
+                            <option value="92">ST. MEERA SCHOOL</option>
+                            <option value="93">ST. THOMAS SCHOOL</option>
+                            <option value="94">ST.MARYS ORTHODOX SCHOOL</option>
+                            <option value="95">ST.PAUL SCHOOL</option>
+                            <option value="96">STEPPING STONES SCHOOL</option>
+                            <option value="97">SUN BEAMS SCHOOL</option>
+                            <option value="98">SUPER INTERNATIONAL SCHOOL</option>
+                            <option value="99">SWARAJ INIAD PUBLIC SCHOOL</option>
+                            <option value="100">TENDERFOOT PUBLIC SCHOOL</option>
+                            <option value="101">TINY TOTS NURSERY</option>
+                            <option value="102">U.P. KIRANA SCHOOL</option>
+                            <option value="103">UNITED PUBLIC SCHOOL</option>
+                            <option value="104">WENDY SCHOOL</option>
+                            <option value="105">WONDER PLAY SCHOOL</option>
+                            <option value="106">WOOD BINE GARDENIA SCHOOL</option>
+                            <option value="107">YOUHE PUBLIC SCHOOL</option>
+                            <option value="108">ZEENAT INTERNATIONAL SCHOOL</option>
+                        </select>
+                    </div>
+                   <hr>
+                  <img src="http://placehold.it/350x250" class="img-rounded pull-right">   
+            </div>
+            <div class="tab-pane text-style" id="tab2">
+              <div class="controls">
+                        <select id="gender" name="gender" class="input-xlarge">
+                            <option value="" selected="selected">(please select a gender for your child)</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                        </select>
+                  </div>
+                <hr>
+                      <img src="http://placehold.it/150x90" class="img-rounded pull-right">
+            </div>
+            <div class="tab-pane text-style" id="tab3">
+              <h2>SIZE</h2>
+                  <div class="controls">
+                        <select id="size" name="size" class="input-xlarge">
+                            <option value="" selected="selected">(please select a size for your child)</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                            <option value="30">30</option>
+                            <option value="32">32</option>
+                            <option value="34">34</option>
+                            <option value="38">38</option>
+                        </select>
+                  </div>
+                <hr>
+                <div class="col-xs-6 col-md-3">
+                  <img src="http://placehold.it/150x150" class="img-rounded pull-right">
+              </div>
+            </div>
+            <div class="tab-pane text-style" id="tab4">
+              <h2>TYPE</h2>
+              <form action="">
+                <input type="checkbox" name="uniform" value="shirt"> SHIRT<br>
+                <input type="checkbox" name="uniform" value="trouser"> TROUSERS<br>
+                <input type="checkbox" name="uniform" value="skirt"> SKIRT<br>
+                <input type="checkbox" name="uniform" value="tunic"> TUNIC<br>
+                <input type="checkbox" name="uniform" value="blazer"> BLAZER 
+              </form>
+                <hr>
+                <div class="col-xs-6 col-md-3">
+                  <img src="http://placehold.it/150x150" class="img-rounded pull-right">
+                </div>
+            </div>
+
+            </div>
+                
+                   </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2value">ENTER STUDENT INFORMATION
+                            <div class="container">
+                <div class="col-sm-2">
+                <nav class="nav-sidebar">
+                    <ul class="nav tabs">
+                      <li class="active"><a href="#tab5" data-toggle="tab">COLOR</a></li>
+                      <li class=""><a href="#tab6" data-toggle="tab">GENDER</a></li>
+                      <li class=""><a href="#tab7" data-toggle="tab">SIZE</a></li>    
+                      <li class=""><a href="#tab8" data-toggle="tab">UNIFORM</a></li>   
+                      <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-modal-sm" onclick="addtostudentcart()">ADD TO CART</button></li>                            
+                    </ul>
+                </nav>
+                    
+            </div>
+            <!-- tab content -->
+            <div class="tab-content">
+            <div class="tab-pane active text-style" id="tab5">
+              <h2>COLOR</h2>
+                  <<select id="color" name="color" class="input-xlarge">
+                            <option value="" selected="selected">(please select a color for your uniform)</option>
+                            <option value="pink">pink</option>
+                            <option value="green">green</option>
+                 </select>
+                   <hr>
+                  <img src="http://placehold.it/350x250" class="img-rounded pull-right">   
+            </div>
+            <div class="tab-pane text-style" id="tab6">
+              <select id="gender2" name="gender2" class="input-xlarge">
+                            <option value="" selected="selected">(please select a gender for your child)</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                </select>
+                <hr>
+                      <img src="http://placehold.it/150x90" class="img-rounded pull-right">
+            </div>
+           <div class="tab-pane text-style" id="tab7">
+              <h2>SIZE</h2>
+                  <div class="controls">
+                        <select id="size2" name="size2" class="input-xlarge">
+                            <option value="" selected="selected">(please select a size for your child)</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                            <option value="30">30</option>
+                            <option value="32">32</option>
+                            <option value="34">34</option>
+                            <option value="38">38</option>
+                        </select>
+                  </div>
+                <hr>
+                <div class="col-xs-6 col-md-3">
+                  <img src="http://placehold.it/150x150" class="img-rounded pull-right">
+              </div>
+            </div>
+            <div class="tab-pane text-style" id="tab8">
+              <h2>TYPE</h2>
+              <form action="">
+                <input type="checkbox" name="uniform2" value="shirt"> SHIRT<br>
+                <input type="checkbox" name="uniform2" value="trouser"> TROUSERS<br>
+                <input type="checkbox" name="uniform2" value="skirt"> SKIRT<br>
+                <input type="checkbox" name="uniform2" value="tunic"> TUNIC<br>
+                <input type="checkbox" name="uniform2" value="blazer"> BLAZER 
+              </form>
+                <hr>
+                <div class="col-xs-6 col-md-3">
+                  <img src="http://placehold.it/150x150" class="img-rounded pull-right">
+                </div>
+            </div>
+            </div>
+    
+                   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+</div>
+<script src="../assets/js/custom/shopping.js"></script>
+</body>
+</html>
